@@ -49,6 +49,7 @@ import static stepdefinitions.SharedSD.getDriver;
 
         public void setValue(By locator,String value)
         {
+            // driver.findElement(locator).sendKeys(value);
             // getDriver().findElement(locator).sendKeys(value);
 
             webAction(locator).sendKeys(value);

@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "Feature",
         glue = "stepdefinitions"
-      // , tags = "@subscription"
+       , tags = " @starverify"
        // , dryRun = true
         ,plugin = {"pretty","html:target/report.html"}
 )
