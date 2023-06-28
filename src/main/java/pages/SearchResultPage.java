@@ -42,4 +42,24 @@ public class SearchResultPage extends Base {
         return ratingList;
     }
 
+
+    By priceListRawElement = By.xpath("//span[@data-testid='price-and-discounted-price']");
+
+    public ArrayList<Integer> getPriceList()
+    {
+        ArrayList<Integer> priceList = new ArrayList<>();
+
+        ArrayList<String> priceListRaw = getElementTextList(priceListRawElement);
+        System.out.println(priceListRaw); // ₹ 3,399
+        for (int i=0;i<priceListRaw.size();i++)
+        {
+            String priceRaw = priceListRaw.get(i).split(" ")[1];  // 3,399
+            String priceStr = priceRaw.replace(",", "");
+            int price = Integer.parseInt(priceStr);
+            priceList.add(price);
+        }
+        System.out.println(priceList);
+        return priceList;
+    }
+
 }

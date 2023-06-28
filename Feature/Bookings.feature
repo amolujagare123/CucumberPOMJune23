@@ -21,7 +21,7 @@ Feature: All bookings.com scenarios
   @maxAmount
   Scenario: check the hotel prices are below a certain amount
     Given I am on default locations search result screen
-    Then I verify system displays all hotels within "25000" amount
+    Then I verify system displays all hotels within "2500" amount
 
 
 #3

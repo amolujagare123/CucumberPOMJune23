@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "Feature",
         glue = "stepdefinitions"
-       , tags = " @starverify"
+       , tags = "@maxAmount"
        // , dryRun = true
         ,plugin = {"pretty","html:target/report.html"}
 )
