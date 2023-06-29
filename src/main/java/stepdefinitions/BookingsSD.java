@@ -78,4 +78,23 @@ public class BookingsSD {
         Assert.assertTrue("Some prices are higher than "+amount
                 +"\nhere are the greater price List\n"+greaterPrices,flag);
     }
+
+    @Then("I verify {string} is within the search result")
+    public void iVerifyIsWithinTheSearchResult(String hotel) {
+
+        ArrayList<String> hotelList = searchResultPage.getHotelsList();
+        boolean flag = false;
+        for (int i=0;i< hotelList.size();i++)
+        {
+            System.out.println(hotelList.get(i));
+
+            if (hotelList.get(i).contains(hotel))
+            {
+                flag = true;
+            }
+
+        }
+        Assert.assertTrue(hotel+": Given hotel is not there in the search result",
+                flag);
+    }
 }

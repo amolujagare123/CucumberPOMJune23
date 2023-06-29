@@ -1,7 +1,6 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
@@ -60,6 +59,13 @@ public class SearchResultPage extends Base {
         }
         System.out.println(priceList);
         return priceList;
+    }
+
+    By hotelsListElement = By.xpath("//div[@data-testid='title']");
+
+    public ArrayList<String> getHotelsList()
+    {
+        return getElementTextList(hotelsListElement);
     }
 
 }

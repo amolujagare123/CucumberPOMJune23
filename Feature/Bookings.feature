@@ -28,4 +28,4 @@ Feature: All bookings.com scenarios
   @hotelsSearch
   Scenario: verify given hotel is present in the list
     Given I am on default locations search result screen
-    Then I verify "Residency Hotel Fort" is within the search result
+    Then I verify "Taj Hotel" is within the search result
