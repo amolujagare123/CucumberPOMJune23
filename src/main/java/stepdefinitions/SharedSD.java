@@ -18,6 +18,7 @@ public class SharedSD {
         driver.manage().window().maximize();
         driver.get(getUrl());
     }
+
     @After
     public void closeBrowser()
     {

@@ -2,19 +2,17 @@ package stepdefinitions;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import static stepdefinitions.SharedSD.driver;
 
-public class AddCustomer {
+public class AddCustomerSD {
 
     /*    @Given("user is logged in")
         public void userIsLoggedIn() {
             // Implement the logic to log in the user
         }*/
 
-
+/*
         @Given("stock user url is opened")
         public void stockUserUrlIsOpened() {
             // Implement the logic to open the stock user URL
@@ -51,7 +49,7 @@ public class AddCustomer {
                 String actual = driver.findElement(By.xpath("//div[@class='confirmation-box round']")).getText();
                 boolean result = actual.contains(expected);
                 Assert.assertTrue("",result);
-        }
+        }*/
     }
 
 
